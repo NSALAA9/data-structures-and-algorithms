@@ -20,22 +20,36 @@ Expected Output: [5, 4, 3, 2, 1]
 **Solution**
 
 function reverseArray(arr) {
+
   let start = 0;
+  
   let end = arr.length - 1;
+  
 
   while (start < end) {
+  
     // Swap elements
+    
     const temp = arr[start];
+    
     arr[start] = arr[end];
+    
     arr[end] = temp;
+    
 
     // Move pointers
+    
     start++;
+    
     end--;
+    
   }
+  
 
   return arr;
+  
 }
+
 
 
 REVERSE ARRAY ALTERNATIVE
@@ -55,10 +69,15 @@ Expected Output: [14, 13, 12, 11, 10]
 **Alternative Solution**
 
 function reverseArrayAlternative(arr) {
+
   const result = [];
+  
   for (let i = arr.length - 1; i >= 0; i--) {
+  
     result.push(arr[i]);
+    
   }
+  
   return result;
 }
 
