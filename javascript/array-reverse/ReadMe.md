@@ -1,4 +1,4 @@
-REVERSE ARRAY
+# REVERSE ARRAY
 
 Given an array arr, we want to reverse the order of its elements.
 
