@@ -38,4 +38,4 @@ describe("LinkedList", () => {
   it("should return the node's value when k is in the middle of the linked list", () => {
     assert.strictEqual(ll.kthFromEnd(1), 8);
   });
-});
+
