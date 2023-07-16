@@ -34,3 +34,5 @@ Feel free to modify the code and experiment with different stack operations.
 
 ## Complexity Analysis
 The time complexity of the push and pop operations is O(1) since they only involve updating the top pointer of the stack. The space complexity is also O(1) as we're not using any extra data structures.
+
+![Alt text](cc11.png)
