@@ -45,6 +45,68 @@
 // const node= new Node();
 
 // module.exports = LinkedList ;
+//console.log("--------------------------------------------------");
+
+// class Node {
+//   constructor(value) {
+//     this.value = value;
+//     this.next = null;
+//   }
+// }
+
+// class LinkedList {
+//   constructor() {
+//     this.head = null;
+//   }
+
+//   append(value) {
+//     const newNode = new Node(value);
+
+//     if (!this.head) {
+//       this.head = newNode;
+//     } else {
+//       let current = this.head;
+//       while (current.next) {
+//         current = current.next;
+//       }
+//       current.next = newNode;
+//     }
+//   }
+
+//   kthFromEnd(k) {
+//     if (k < 0) {
+//       throw new Error('k must be a non-negative integer.');
+//     }
+
+//     if (!this.head) {
+//       throw new Error('Cannot perform operation on an empty list.');
+//     }
+
+//     let slow = this.head;
+//     let fast = this.head;
+
+//     for (let i = 0; i < k; i++) {
+//       if (!fast.next) {
+//         throw new Error('k is greater than the length of the linked list.');
+//       }
+//       fast = fast.next;
+//     }
+
+//     while (fast.next) {
+//       slow = slow.next;
+//       fast = fast.next;
+//     }
+
+//     return slow.value;
+//   }
+// }
+
+// // const list = new LinkedList();
+// // const node= new Node();
+
+//console.log("--------------------------------------------------");
+
+'use strict';
 
 class Node {
   constructor(value) {
@@ -58,51 +120,34 @@ class LinkedList {
     this.head = null;
   }
 
-  append(value) {
-    const newNode = new Node(value);
-
-    if (!this.head) {
-      this.head = newNode;
-    } else {
-      let current = this.head;
-      while (current.next) {
-        current = current.next;
-      }
-      current.next = newNode;
-    }
-  }
-
   kthFromEnd(k) {
     if (k < 0) {
-      throw new Error('k must be a non-negative integer.');
+      throw new Error('k must be a positive integer.');
     }
 
     if (!this.head) {
-      throw new Error('Cannot perform operation on an empty list.');
+      throw new Error('The linked list is empty.');
     }
 
-    let slow = this.head;
-    let fast = this.head;
-
-    for (let i = 0; i < k; i++) {
-      if (!fast.next) {
-        throw new Error('k is greater than the length of the linked list.');
-      }
-      fast = fast.next;
+    let count = 0;
+    let current = this.head;
+    while (current) {
+      count++;
+      current = current.next;
     }
 
-    while (fast.next) {
-      slow = slow.next;
-      fast = fast.next;
+    if (k >= count) {
+      throw new Error('k is greater than or equal to the length of the linked list.');
     }
 
-    return slow.value;
+    current = this.head;
+    for (let i = 0; i < count - k - 1; i++) {
+      current = current.next;
+    }
+
+    return current.value;
   }
 }
-
-// const list = new LinkedList();
-// const node= new Node();
-
 
 module.exports = { LinkedList, Node };
 
