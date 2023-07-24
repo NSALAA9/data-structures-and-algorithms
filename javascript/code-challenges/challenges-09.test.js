@@ -124,15 +124,11 @@ const characters = [
 ];
 
 const getHouses = (arr) => {
-  let houses = [];
+  //let houses = [];
   // Solution code here...
-  arr.forEach((character) => {
-    if (character.house && !houses.includes(character.house)) {
-      houses.push(character.house);
-    }
-  });
- 
-  return houses;
+  let arr2 = [];
+  arr.forEach((ele) => arr2.push(ele.house));
+  return arr2;
 };
 
 /*------------------------------------------------------------------------------------------------
