@@ -1,4 +1,4 @@
-const { K_ary } = require('./FizzBuzzCC18.js');
+const { K_ary } = require('./FizzBuzzCC18');
 
 describe('FizzBuzz Tree', () => {
   test('FizzBuzz transformation for a single node', () => {
