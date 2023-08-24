@@ -21,3 +21,4 @@ describe('insertionSort function', () => {
     assert.strictEqual(visualize(sorted), '[1,2,4,5,8]');
   });
 });
+
