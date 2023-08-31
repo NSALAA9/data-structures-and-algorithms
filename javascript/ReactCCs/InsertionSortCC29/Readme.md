@@ -45,5 +45,4 @@ This visualization demonstrates the step-by-step process of how the insertion so
 
 # Testing 
 ![Alt text](cc29.png)
-
 ![Alt text](<cc29 b.png>)
