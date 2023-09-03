@@ -45,5 +45,4 @@ describe('Hashtable', () => {
     expect(smallHashTable.get('name')).toEqual('John');
     expect(smallHashTable.get('age')).toEqual(30);
   });
-  
 });

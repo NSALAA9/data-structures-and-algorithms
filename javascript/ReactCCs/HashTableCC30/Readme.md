@@ -4,7 +4,6 @@
 
 The problem domain for this Hashtable implementation is to create a data structure that can efficiently store key-value pairs and perform operations like setting values for keys, getting values for keys, checking if a key exists, and retrieving a list of all unique keys.
 
-
 ### Key Operations to Support
 
 1. `set(key, value)`: Set a key-value pair in the Hashtable, handling collisions.

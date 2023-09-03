@@ -82,7 +82,6 @@ module.exports = Hashtable;
 const hashTable = new Hashtable();
 hashTable.set('name', 'Alaa');
 hashTable.set('age', 24);
-  
 console.log(hashTable.get('name')); // Output: Alaa
 console.log(hashTable.get('age')); // Output: 24
 console.log(hashTable.get('city')); // Output: undefined
