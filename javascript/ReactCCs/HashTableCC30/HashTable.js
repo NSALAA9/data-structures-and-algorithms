@@ -78,7 +78,6 @@ class Hashtable {
 }
 module.exports = Hashtable;
 
-  
 // Example Tests
 const hashTable = new Hashtable();
 hashTable.set('name', 'Alaa');
