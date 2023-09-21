@@ -1,4 +1,4 @@
-const { Graph, businessTrip } = require('./CC37'); // Replace with your actual file path
+const { Graph, businessTrip } = require('./CC37'); 
 
 describe('businessTrip', () => {
   let cityGraph;
