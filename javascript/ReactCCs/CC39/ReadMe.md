@@ -1,4 +1,7 @@
 # Problem Domain
+You are given an adjacency matrix representation of a graph, and your task is to implement a function to convert this matrix into an adjacency list representation.
+
+
 ![Alt text](39.png)
 
 # **Solution:**
